@@ -31,7 +31,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: alpine
-    if: github.event_name == 'workflow_dispatch'
     timeout-minutes: 60
     steps:
     - uses: actions/checkout@v4.1.0
